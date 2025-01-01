@@ -1,0 +1,139 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+    background-color: #f4f4f4; /* Light background color for better contrast */
+}
+
+header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px; /* Increased padding for a more spacious header */
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#title {
+    font-size: larger;
+    cursor: pointer;
+    color: white; /* Change title color for better visibility */
+}
+
+.searchInput {
+    background-color: transparent;
+    padding: 8px 12px; /* Increased padding for better usability */
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+.searchInput:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#moviesElement {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    padding: 16px;
+    gap: 16px;
+    background-color: #eaeaea;
+}
+
+.movie {
+    width: 100%;
+    height: 350px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    background-color: white; /* White background for movie cards */
+    border-radius: 8px; /* Rounded corners for movie cards */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.movie:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.movie img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.pagination {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0; 
+    color: black;
+}
+
+#prev, #next {
+    background-color: cadetblue;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners for buttons */
+    color: white; /* Change text color to white */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#prev:hover, #next:hover {
+    background-color: #007BFF; /* Change background color on hover */
+}header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    font-size: 2rem; /* Increased font size for better visibility */
+    color: white;
+    cursor: pointer;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.searchInput {
+    background-color: transparent;
+    padding: 10px 15px; /* Increased padding for better usability */
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-right: 10px; /* Space between input and select */
+    transition: border-color 0.3s;
+}
+
+.searchInput:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.genreSelect {
+    padding: 10px 15px; /* Padding for the select dropdown */
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white; /* White background for better contrast */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: border-color 0.3s;
+}
+
+.genreSelect:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none;
+}
